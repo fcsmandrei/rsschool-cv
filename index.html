@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <h1 class="summary">Summary</h1>
+    <div class="summary-container">
+      <div class="name">
+        <table>
+         <tr>
+           <td><strong>Name:</strong></td>
+           <td>Andrei;</td>      
+         </tr>
+         <tr>
+           <td><strong>Surname:</strong></td>           
+           <td>Leonchikov;</td>           
+         </tr>
+         <tr>
+           <td><strong>Contact:</strong></td>
+           <td>Mogilev, Belarus.</td>
+         </tr>
+        </table>
+      </div>      
+      <div class="get-in-touch-wrapper">
+        <p class="get-in-touch"><strong>You can get in touch with me:</strong> </p>
+        <p><em>telephone:</em><a href="tel: +375445395830"> +375(44)539-58-30,</a></p>
+        <p><em>email:</em><a href="mailto: leonchikovandrei@gmail.com"> leonchikovandrei@gmail.com</a></p>
+      </div>  
+      <div class="photo">
+        <img class="photo-img" src="photo.jpg" alt="fcsmandrei">
+      </div>  
+    </div>    
+    <nav class="nav">
+      <ul class="list-items">
+        <li><a class="item" href="#header">Main</a></li>
+        <li><a class="item" href="#profile">profile</a></li>
+        <li><a class="item" href="#skills">skills</a></li>
+        <li><a class="item" href="#example">example</a></li>
+        <li><a class="item" href="#experience">experience</a></li>
+        <li><a class="item" href="#education">education</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="profile" id="profile">
+      <h2 class="profile-title">Profile</h2>
+      <p class="profile-describe">A conscientious, fast learner offering the ability to assess an organization’s needs and create a complementary, robust web presence. My primary goal I to apply my technical expertise all throughout the full software life cycle to ensure production and delivery of products and services that meet client specifications. Along with strong personal knowledge, skills, and experience in software engineering, I am positive that this goal can be achieved. My new experience enhanced my abilities in designing, implementing, testing, and upgrading software.  </p>
+    </section>
+    <section class="skills" id="skills">
+      <h2 class="skills-title">Skills</h2> 
+      <em>Hands-on experience in page making and theoretical knowledge in JavaScript programming.</em>
+      <ul>
+        <li>JavaScript language;</li>
+        <li>HTML (Hyper Text Markup Language);</li>
+        <li>CSS( Cascading Style Sheets);</li>
+        <li>Bottstrap;</li>
+        <li>Git;</li>
+        <li>Avacode/Photoshop;</li>
+      </ul>
+    </section>
+    <section class="example" id="example">
+      <h2 class="example-title">Code example:</h2>
+      <pre>
+        <code>
+          function camelize(str) {
+            var arr = str.split('-');
+
+            for (var i = 1; i < arr.length; i++) {
+              arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+            }
+
+            return arr.join('');
+          } <br>
+        </code>
+      </pre>
+    </section>
+    <section class="experience" id="experience">
+      <h2 class="experience-title">Experience</h2>
+      <h3 class="my-sites">My sites</h3>
+      <a href="http://www.salon-mayak.by/">http://www.salon-mayak.by</a>, <a href="http://staltrest.by/">http://staltrest.by</a> ect.
+    </section>
+    <section class="education" id="education">
+      <h2 class="education-title">Education</h2>
+      <h3>Higher education:</h3>
+      <ul>
+        <li>BSUIR, Computer-aided Design, 2015 </li>
+      </ul>
+      <h3>IT education:</h3>
+      <ul>
+        <li><a href="http:www.codecademy.com">Codecademy.com, </a><a href="http://htmlbook.ru">htmlbook.ru, </a><a href="http://WebRef.ru">WebRef.ru, </a><a href="http://learn.javascript.ru">learn.javascript.ru </a>    and other internet resources.</li>
+      </ul>
+    </section>
+    <section class="english" id="english">
+      <h2 class="english-title">English</h2>
+      <p>Level: A2. I went to offline course "English80" in Mogilev.(2018)</p>
+    </section> 
+  </main>
+  <footer class="footer">
+    <p class="copiright">&copy; Copirighting fcsm</p>
+  </footer>
+</body>
+</html>

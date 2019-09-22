@@ -1,0 +1,221 @@
+body, 
+html, 
+h1, 
+h2, 
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;  
+  line-height: 1.8;
+  text-align: justify;
+}
+
+body, 
+html {
+  font-size: 16px;
+}
+
+pre {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #343434;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+} 
+
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+h2, 
+h3 {
+  position: relative;
+}
+
+h2::after,
+h3::after {
+  content: "\1F4CE";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  font-size: 20px;
+  color: #43bc7c;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+
+h2:hover::after,
+h3:hover::after{
+  visibility: visible;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  margin-bottom: 60px;
+}
+
+.summary {
+  margin-top: 25px;
+  padding-bottom: 10px;  
+  border-bottom: 4px solid #232323;
+  font-size: 36px;
+  text-align: center;
+}
+
+.summary-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.name td {padding: 6px 20px}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.photo-img {
+  width: 200px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: 0.8s;
+          transition: 0.8s;
+}
+
+.photo-img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.8s;
+          transition: 0.8s;
+}
+
+a:hover {
+  color: #43bc7c;
+  -webkit-transition: 0.8s;
+          transition: 0.8s;
+}
+
+.nav {
+  margin-top: 15px;
+}
+
+.list-items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #232323;
+}
+
+.item {
+  display: block;
+  padding: 15px 20px 13px;  
+  color: #fefefe;
+  text-transform: uppercase;
+  position: relative;
+} 
+  
+.list-items li:first-child {
+  border-bottom: 2px solid #43bc7c;
+}
+
+li:first-child .item {
+  color: #43bc7c; 
+}
+
+li +li .item:first-child:hover {
+  border-bottom: 2px solid #43bc7c;
+  color: #43bc7c;
+  -webkit-transition: 0.8s;
+          transition: 0.8s;
+}
+
+.main section {
+  padding: 15px 20px;
+}
+
+.main h2, h3, .main p {
+  text-indent: 40px;
+}
+
+.skills, .experience, .english {
+  background-color: #eeeeee;
+  border-top: 4px double #232323;
+}
+
+.skills li,
+.education li {
+  padding-left: 30px;
+  position: relative;
+}
+
+.skills li:after,
+.education li:after {
+  content: "\2713";
+  position: absolute;
+  top: 0;
+  left: 1px;
+}
+
+.education li:after{
+    content: "\279E";
+}
+
+.footer {
+  padding: 1px 20px;
+  background-color: #000;
+  font-size: 12px;
+  text-align: center;
+  color: #414141;
+}
+
+@media screen and (max-width: 840px) {
+  div.phone-img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  div.phone {
+    width: 100px;
+  }  
+  body {
+    font-size: 12px;
+  }
+  
+  h1 {
+    font-size: 26px;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .list-item,
+  .list-item li {
+    display: block;
+  }    
+  
+}
